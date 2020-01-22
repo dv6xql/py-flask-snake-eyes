@@ -3,3 +3,8 @@
 # Extended
 
 * FAQ page
+* Test for FAQ page
+
+# How to run tests
+
+`docker-compose exec website py.test snakeeyes/tests`
