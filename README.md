@@ -4,6 +4,7 @@
 
 * FAQ page
 * Test for FAQ page
+* Custom CLI command `hello`
 
 # How to run tests
 
