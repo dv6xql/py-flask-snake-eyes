@@ -6,11 +6,13 @@ from flask import (
     url_for,
     render_template)
 
-# from snakeeyes.blueprints.contact.forms import ContactForm
+from snakeeyes.blueprints.feedback.forms import FeedbackForm
 
 feedback = Blueprint('feedback', __name__, template_folder='templates')
 
 
 @feedback.route('/feedback', methods=['GET', 'POST'])
 def index():
-    pass
+    form = FeedbackForm()
+
+    return render_template('feedback/index.html', form=form)
