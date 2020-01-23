@@ -3,6 +3,7 @@ from celery import Celery
 
 from snakeeyes.blueprints.page import page
 from snakeeyes.blueprints.contact import contact
+from snakeeyes.blueprints.feedback import feedback
 from snakeeyes.extensions import debug_toolbar, mail, csrf
 
 CELERY_TASK_LIST = [
@@ -53,6 +54,7 @@ def create_app(settings_override=None):
 
     app.register_blueprint(page)
     app.register_blueprint(contact)
+    app.register_blueprint(feedback)
     extensions(app)
 
     return app
