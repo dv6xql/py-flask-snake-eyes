@@ -63,3 +63,5 @@ This challenge is up to you. What's a quality of life improvement that you'd lik
 then go at it and implement it yourself.
 
 Feel free to message me with your quality of life idea too, I'd be curious to see what you came up with.
+
+e.g. create a blueprint skeleton
