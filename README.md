@@ -64,6 +64,10 @@ List all of the available routes
 
 `docker-compose exec website snakeeyes routes`
 
+Lines of code
+
+`docker-compose exec website snakeeyes loc`
+
 # Database
 
 Run PostgreSQL related tasks
