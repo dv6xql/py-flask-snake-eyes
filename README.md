@@ -50,6 +50,16 @@ Generate all data
 
 `docker-compose exec website snakeeyes add all`
 
+## Others
+
+Generate secure token, by default 128 bytes
+
+`docker-compose exec website snakeeyes secret`
+
+Generate secure token, e.g 64 bytes
+
+`docker-compose exec website snakeeyes secret 64`
+
 # Database
 
 Run PostgreSQL related tasks
