@@ -50,6 +50,20 @@ Generate all data
 
 `docker-compose exec website snakeeyes add all`
 
+## Stripe
+
+Sync Stripe plans
+
+`docker-compose exec website snakeeyes stripe sync_plans`
+
+List of all Stripe plans
+
+`docker-compose exec website snakeeyes stripe list_plans`
+
+Delete plan by id
+
+`docker-compose exec website snakeeyes stripe delete_plans bronze`
+
 ## Others
 
 Generate secure token, by default 128 bytes
