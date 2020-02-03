@@ -99,3 +99,17 @@ Init and seed automatically
 Seed the database with an initial user
 
 `docker-compose exec website snakeeyes db seed`
+
+# ngrok (for Stripe Webhooks)
+
+ngrok exposes local servers behind NATs and firewalls to the public internet over secure tunnels.
+
+## Download 
+
+https://ngrok.com/download
+
+## Run
+
+Download and run `ngrok http localhost:8888`, then you will see Session Status and section forwarding e.g. http://4d5edf40.ngrok.io
+
+Add to SERVER_NAME variable in `./instance/setting.py` without `http://` or `https://`.
