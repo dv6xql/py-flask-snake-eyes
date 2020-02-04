@@ -53,6 +53,14 @@ Create new empty migration
 
 `docker-compose exec --user "$(id -u):$(id -g)" website alembic revision -m "create foo table"`
 
+Run migrations
+
+`docker-compose exec website alembic upgrade head`
+
+Downgrade migrations (rollback 1 revision)
+
+`docker-compose exec website alembic downgrade -1`
+
 ## Generate fake data
 
 List of all commands 
