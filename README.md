@@ -143,6 +143,12 @@ Generate all data
 
 ngrok exposes local servers behind NATs and firewalls to the public internet over secure tunnels.
 
+# Internationalization (i18n)
+
+Extract new messages from files 
+
+`docker-compose exec --user "$(id -u):$(id -g)" website snakeeyes babel extract`
+
 ## Download 
 
 https://ngrok.com/download
