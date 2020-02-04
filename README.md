@@ -149,6 +149,14 @@ Extract new messages from files
 
 `docker-compose exec --user "$(id -u):$(id -g)" website snakeeyes babel extract`
 
+Update existing translations
+
+`docker-compose exec --user "$(id -u):$(id -g)" website snakeeyes babel update`
+
+Compile existing translations
+
+`docker-compose exec --user "$(id -u):$(id -g)" website snakeeyes babel compile`
+
 ## Download 
 
 https://ngrok.com/download
