@@ -22,7 +22,8 @@ MAIL_PASSWORD = 'awesomepassword'
 LANGUAGES = {
     'en': 'English',
     'kl': 'Klingon',
-    'es': 'Spanish'
+    'es': 'Spanish',
+    'pl': 'Polish',
 }
 BABEL_DEFAULT_LOCALE = 'en'
 

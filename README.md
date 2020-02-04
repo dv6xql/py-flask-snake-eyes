@@ -145,7 +145,11 @@ ngrok exposes local servers behind NATs and firewalls to the public internet ove
 
 # Internationalization (i18n)
 
-Extract new messages from files 
+Add new languages (e.g. PL)
+
+`docker-compose exec --user "$(id -u):$(id -g)" website snakeeyes babel init --language pl`
+
+Extract new messages from .py files 
 
 `docker-compose exec --user "$(id -u):$(id -g)" website snakeeyes babel extract`
 
