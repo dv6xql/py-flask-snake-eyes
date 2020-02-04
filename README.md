@@ -38,6 +38,17 @@
 
 ## Database migrations
 
+```
+New Server Registration in pgAdmin
+---
+Name: SnakeEyes
+Host: localhost
+Port: 5432
+Maintance DB: postgres
+Username: snakeeyes
+Password: devpassword
+```
+
 Create new empty migration
 
 `docker-compose exec --user "$(id -u):$(id -g)" website alembic revision -m "create foo table"`
