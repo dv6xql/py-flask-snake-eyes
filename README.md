@@ -61,6 +61,14 @@ Downgrade migrations (rollback 1 revision)
 
 `docker-compose exec website alembic downgrade -1`
 
+Show current revision id
+
+`docker-compose exec website alembic current`
+
+Show revision history
+
+`docker-compose exec website alembic history --verbose`
+
 ## Generate fake data
 
 List of all commands 
