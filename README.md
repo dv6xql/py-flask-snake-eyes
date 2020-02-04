@@ -49,6 +49,10 @@ Username: snakeeyes
 Password: devpassword
 ```
 
+Auto-generating migrations
+
+`docker-compose exec --user "$(id -u):$(id -g)" website alembic revision --autogenerate -m "Add foobar column to users"`
+
 Create new empty migration
 
 `docker-compose exec --user "$(id -u):$(id -g)" website alembic revision -m "create foo table"`
