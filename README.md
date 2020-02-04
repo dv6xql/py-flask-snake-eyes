@@ -36,6 +36,12 @@
 
 `docker-compose exec website snakeeyes flake8 --no-skip-init`
 
+## Database migrations
+
+Create new empty migration
+
+`docker-compose exec --user "$(id -u):$(id -g)" website alembic revision -m "create foo table"`
+
 ## Generate fake data
 
 List of all commands 
